@@ -1,0 +1,36 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} */
+
+body{
+    background-color: bisque;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#ball{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(255, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.625rem auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+#bar{
+    width : 20px;
+    position: absolute;
+    height: 300px;
+    background-color: rgb(72, 42, 132);
+    display: flex;
+    margin : 0 auto;
+}
