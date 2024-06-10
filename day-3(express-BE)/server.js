@@ -4,7 +4,6 @@ const path = require('path');
 
 const app = express();
 
-
 app.get("/hello", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })
