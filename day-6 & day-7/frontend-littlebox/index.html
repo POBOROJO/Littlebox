@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #root{
+           display: flex;
+           gap: 20px;
+           flex-wrap: wrap;
+           padding: 5rem;
+        }
+        #root> div{
+            width: 200px;
+            background-color: #fefefe;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .update-form{
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main style="max-width: 680px; margin: 0 auto; background-color: #f0f0f0; padding: 20px; ">
+        <h1 style="text-align: center;">Latest Posts</h1>
+        <div id="root"></div>
+        <form style="margin-top: 40px;">
+            <input type="text" id="post-title" placeholder="title">
+            <input type="text" id="post-summary" placeholder="summary">
+            <button id="post-submit">Add Post</button>
+        </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
