@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React in HTML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #root{
+            width: 900px;
+            margin: 40px auto;
+            background-color: #f0f0f0;
+        }
+        .posts{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .post{
+            width: 250px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .add-post{
+            margin: 40px;
+        }
+        .add-post input,.add-post button{
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="post.js"></script>
+    <script type="text/babel" src="main.js"></script>
+  </body>
+</html>

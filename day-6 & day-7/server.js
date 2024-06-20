@@ -37,11 +37,12 @@ app.post("/", (req, res)=>{
 });
 
 app.put("/:id", (req,res)=> {
-    const id = req.params.id;
+    const {id} = req.params;
     const body = req.body;
     posts.forEach((post)=>{
         if(post.id == id){
             post.title =  body.title;
+            post.summary = body.summary;
         }
     })
     res.json({
