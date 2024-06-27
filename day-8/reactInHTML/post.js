@@ -1,9 +1,11 @@
+import { useState,useEffect } from "react";
+
 const Posts = () => {
   // STATE - useState()
   const [posts, setPosts] = React.useState([]);
 
   //LIFECYCLE- useEffect()
-  React.useEffect(() => {
+  useEffect(() => {
     //Get request to the backend
     fetch("http://localhost:3000")
       .then((response) => response.json())

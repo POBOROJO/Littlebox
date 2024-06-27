@@ -1,31 +1,8 @@
 #root {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #0b0606;
-}
-.add-post{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-}
-
-.Header, .Footer{
-    display: flex;
-    justify-content: center;
-}
-
-.container{
-  display:flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 40px 0;
-}
-
-.post{
-  background: rgb(53, 109, 251);
-  padding: 10px;
-  border: rgb(183, 173, 173) solid;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo {
